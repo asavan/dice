@@ -1,4 +1,5 @@
 import starter from "./js/starter.js";
+import settings from "./js/settings.js";
 
 if (__USE_SERVICE_WORKERS__) {
     if ("serviceWorker" in navigator) {
@@ -6,4 +7,4 @@ if (__USE_SERVICE_WORKERS__) {
     }
 }
 
-starter(window, document);
+starter(window, document, settings);
